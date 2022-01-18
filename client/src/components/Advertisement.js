@@ -1,8 +1,9 @@
 import React from "react";
 import {Card,Button} from 'react-bootstrap';
-const Advertisement = ({web3,accounts,contract,title,desc,link,imgHash, highestBidder, highestAmount}) => {
+const Advertisement = ({title,desc,link,imgHash, highestBidder, highestAmount, moneyCollected}) => {
   return (
     <div className="carddiv">
+      <div className="py-4">Money Collected Till Now: {moneyCollected} ethers</div>
       <Card className="d-block card" >
         {imgHash.length>0?
         <Card.Img variant="top" src= {`https://ipfs.infura.io/ipfs/${imgHash}`} />

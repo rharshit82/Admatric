@@ -6,8 +6,11 @@ const ChangeAd = ({adSubmit, highestAmount}) => {
     title: "",
     desc: "",
     link: "",
-    value: highestAmount
+    value: parseFloat(highestAmount)+0.1
   })
+  useEffect(() =>{
+    setFormData({...formData, value: Math.round((parseFloat(highestAmount) + 0.1) * 10) / 10});
+  }, [highestAmount])
   
   const captureImage = (e) => {
     e.preventDefault();
@@ -61,7 +64,7 @@ const ChangeAd = ({adSubmit, highestAmount}) => {
           <Form.Control
           value={formData.value}
             type="number"
-            min={(highestAmount*10)/10+0.1}
+            min={Math.round((parseFloat(highestAmount) + 0.1) * 10) / 10}
             step="0.1"
             placeholder="Enter Amount"
             onChange={(e) => setFormData({...formData, value: e.target.value})}

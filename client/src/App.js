@@ -23,6 +23,7 @@ class App extends Component {
     imgHash: "",
     highestAmount: 0,
     highestBidder: "",
+    moneyCollected: 0,
   };
   initAd = async () => {
     const { web3, accounts, contract } = this.state;
@@ -34,6 +35,7 @@ class App extends Component {
       imgHash: response[3],
       highestAmount: web3.utils.fromWei(response[4], 'ether'),
       highestBidder: response[5],
+      moneyCollected: web3.utils.fromWei(response[6], 'ether')
     });
     console.log(response);
   };
@@ -96,15 +98,13 @@ class App extends Component {
             <ChangeAd adSubmit={this.adSubmit} 
             highestAmount={this.state.highestAmount} />
             <Advertisement
-              web3={this.state.web3}
-              accounts={this.state.accounts}
-              contract={this.state.contract}
               title={this.state.title}
               desc={this.state.desc}
               link={this.state.link}
               imgHash={this.state.imgHash}
               highestAmount={this.state.highestAmount}
               highestBidder={this.state.highestBidder}
+              moneyCollected = {this.state.moneyCollected}
             />
           </div>
         </main>
