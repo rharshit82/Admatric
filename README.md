@@ -7,9 +7,8 @@ This is a Dapp built using MERN Stack, Solidity and Truffle. This project is a p
 ## Youtube Video for Explanation:
 <a href="https://www.youtube.com/watch?v=7EMlcNMeNsc&feature=youtu.be
 " target="_blank"><img src="https://raw.githubusercontent.com/rharshit82/Admatric/main/Screenshot.png" 
-alt="Admatric Screenshot" width="240" height="180" border="10" /></a>
-## Screenshots:
-![Admatric Screenshot](https://raw.githubusercontent.com/rharshit82/Admatric/main/Screenshot.png "Admatric Screenshot")
+alt="Admatric Screenshot" width="500" height="500" border="10" /></a>
+
 
 ## Requirements
 To run this app, Truffle suit, Metamask and Ganache has to be installed in the system.
@@ -18,4 +17,7 @@ To run this app, Truffle suit, Metamask and Ganache has to be installed in the s
 
 Run ```npm install --prefix client``` in Terminal from Root directory.
 To start the app, run ```npm start --prefix client``` in Terminal from Root Directory.
+
+## Screenshots:
+![Admatric Screenshot](https://raw.githubusercontent.com/rharshit82/Admatric/main/Screenshot.png "Admatric Screenshot")
 
