@@ -15,7 +15,7 @@ To run this app, Truffle suit, Metamask and Ganache has to be installed in the s
 
 # How to Run
 
-Run ```npm install --prefix client``` in Terminal from Root directory.
+Run ```npm install --prefix client``` in Terminal from Root directory. <br>
 To start the app, run ```npm start --prefix client``` in Terminal from Root Directory.
 
 ## Screenshots:
