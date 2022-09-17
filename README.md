@@ -2,7 +2,7 @@
 
 ## Description
 Admatric is an Advertisement Auction app in which there is an Advertisement area for sale. Anyone can buy the ad area paying amount greater than the last buyer. <br><br>
-This is a Dapp built using MERN Stack, Solidity and Truffle. This project is a part of [Ethereum Developer challenge on ETHhole](https://ethhole.com/challenge). 
+This is a Dapp built using MERN Stack, Solidity and Truffle.
 
 ## Youtube Video for Explanation:
 <a href="https://www.youtube.com/watch?v=7EMlcNMeNsc&feature=youtu.be
